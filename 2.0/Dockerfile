@@ -28,7 +28,7 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 RUN chmod +x /usr/local/bin/gosu
 
 
-VOLUME ["/var/lib/elasticsearch"]
+VOLUME ["/data"]
 
 EXPOSE 9200
 EXPOSE 9300

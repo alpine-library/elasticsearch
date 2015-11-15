@@ -71,6 +71,7 @@ echo "-------------------------------"
 echo "/opt/elasticsearch/bin/elasticsearch $commandopts $esopts"
 
 start() {
+  chown -R elasticsearch:elasticsearch /data
 	exec gosu elasticsearch /opt/elasticsearch/bin/elasticsearch $commandopts $esopts
 }
 start
